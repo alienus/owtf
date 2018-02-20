@@ -45,7 +45,7 @@ RUN cp -f /owtf/docker/default.settings.py /owtf/owtf/settings.py
 
 # Install OWTF using the recommended method (setup.py)
 RUN cd /owtf &&\
-  python setup.py develop
+  python setup.py install
 
 # Set the current working directory to OWTF root directory
 WORKDIR /owtf
